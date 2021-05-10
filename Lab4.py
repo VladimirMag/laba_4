@@ -52,6 +52,10 @@ def mongodb(counter_for_insert,user_text,collection):
                     # print("RABOTA")
                 if counter_for_see == 1000:  # количество строчек для добавления
                     break
+        else:
+            collection.insert_many(inserter_list)
+        
+                
 
 
     # print(len(inserter_list))
